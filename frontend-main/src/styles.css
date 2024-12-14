@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  h1, h2 {
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    color: #555;
+  }
+  
+  .form-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .form-container label {
+    display: inline-block;
+    width: 120px;
+    font-weight: 600;
+  }
+  
+  .form-container input[type=text],
+  .form-container input[type=number] {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .indicators-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  
+  .indicators-list label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+  }
+  
+  .indicators-list input {
+    margin-right: 5px;
+  }
+  
+  .predict-button {
+    background: #4e79a7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  .predict-button:hover {
+    background: #3f6185;
+  }
+  
+  .error {
+    color: #b22222;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ddd;
+    border-top: 4px solid #4e79a7;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+  
+  .results-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .results-container h2 {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table thead {
+    background: #f0f0f0;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  table tr:last-child td {
+    border-bottom: none;
+  }
+  
